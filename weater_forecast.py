@@ -2,7 +2,7 @@ import requests
 
 
 def main():
-    url_template= 'https://wttr.in/{}?M?nTqu&lang=ru'
+    url_template = 'https://wttr.in/{}?M?nTqu&lang=ru'
     svo = url_template.format('svo')
     response = requests.get(svo)
     print(response.text)
